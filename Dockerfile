@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM alpine:3.8
 
 RUN apk update && apk upgrade
 
@@ -31,3 +31,4 @@ ADD https://storage.googleapis.com/kubernetes-release/release/v1.5.2/bin/linux/a
 RUN chmod +x /usr/local/bin/kubectl
 
 CMD bash
+
